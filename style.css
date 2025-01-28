@@ -127,6 +127,12 @@ main{
             }
         }
     }
+
+    .most-listened{
+        img{
+            border-radius: 50%;
+        }
+    }
 }
 
 
