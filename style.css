@@ -12,9 +12,26 @@
 .sidebar{
     width: 10%;
     height: 1000px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+        padding-top: 1rem;
+    }
 
     .logo{
-        width: 50px;
+        width: 30px;
+    }
+
+    nav{
+        width: 20px;
+
+        .dwn{
+            width: 15px;
+        }
     }
 }
 
@@ -27,4 +44,12 @@ main{
 
 img{
     max-width: 100%;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 639px) {
+
+    
+    
 }
