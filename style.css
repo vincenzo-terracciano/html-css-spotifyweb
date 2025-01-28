@@ -216,3 +216,18 @@ li{
     }
     
 }
+
+@media screen and (min-width: 878px) {
+
+    .col-3{
+        width: calc(100% / 12 * 3);
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .col-2{
+        width: calc(100% / 12 * 2);
+    }
+}
