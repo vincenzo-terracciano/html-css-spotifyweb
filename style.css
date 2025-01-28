@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    background-color: black;
+    display: flex;
+}
+
+.sidebar{
+    width: 10%;
+    height: 1000px;
+
+    .logo{
+        width: 50px;
+    }
+}
+
+main{
+    width: 90%;
+    background-color: darkblue;
+}
+
+/* Utilities */
+
+img{
+    max-width: 100%;
+}
