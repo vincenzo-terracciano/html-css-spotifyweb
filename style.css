@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --spoti-icon: #666666;
+}
+
 .top{
     background-color: black;
     display: flex;
@@ -12,7 +16,7 @@
 .sidebar{
     width: 10%;
     height: 1000px;
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,15 +27,56 @@
     }
 
     .logo{
-        width: 30px;
+        img{
+            width: 30px;
+        }
+
+        .lg-big{
+            display: none;
+        }
     }
 
     nav{
-        width: 20px;
+    width: 100%;
+
+        img{
+            width: 30px;
+        }
 
         .dwn{
-            width: 15px;
+            width: 20px;
         }
+
+        hr{
+            display: none;
+            margin-top: 1rem;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--spoti-icon);
+
+        h5{
+            color: white;
+            padding: 2rem 0 0.5rem 0;
+        }
+
+        &:hover{
+            color: white;
+        }
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .playlist ul li:first-child{
+        font-size: 20px;
+    }
+
+    .fa-square-plus{
+        font-size: 35px;
     }
 }
 
@@ -40,16 +85,48 @@ main{
     background-color: darkblue;
 }
 
+
+
 /* Utilities */
 
 img{
     max-width: 100%;
 }
 
+.text-hidden{
+    display: none;
+}
+
 /* Media Query */
 
 @media screen and (min-width: 639px) {
 
-    
+    .sidebar{
+        width: 30%;
+        align-items: start;
+
+        .logo{
+            .lg-small{
+                display: none;
+            }
+
+            .lg-big{
+                display: block;
+                width: 200px;
+            }
+        }
+
+        .playlist{
+            display: block;
+        }
+
+        nav hr{
+            display: block;
+        }
+    }
+
+    .text-hidden{
+        display: inline;
+    }
     
 }
