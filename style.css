@@ -57,15 +57,10 @@
     }
 
     a{
-        color: var(--spoti-icon);
 
         h5{
             color: white;
             padding: 2rem 0 0.5rem 0;
-        }
-
-        &:hover{
-            color: white;
         }
     }
 
@@ -84,6 +79,7 @@
 
 main{
     width: 90%;
+    max-width: 1140px;
     background-color: var(--spoti-primary);
 
     .upgrade{
@@ -93,17 +89,30 @@ main{
         background-color: var(--spoty-secondary);
 
         a{
-            color: var(--spoti-icon);
             border: 1px solid var(--spoti-icon);
             padding: 1rem 2rem;
             border-radius: 6rem;
             font-size: 12px;
 
             &:hover{
-                color: white;
                 border: 1px solid white;
             }
         }
+    }
+
+    .menu{
+        .genres{
+            padding: 1rem;
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+
     }
 }
 
@@ -121,6 +130,15 @@ img{
 
 a{
     text-decoration: none;
+    color: var(--spoti-icon);
+
+    &:hover{
+        color: white;
+    }
+}
+
+li{
+    list-style: none;
 }
 
 /* Media Query */
