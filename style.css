@@ -83,7 +83,11 @@ body{
         display: none;
     }
 
-    .playlist ul li:first-child{
+    .scroll{
+        min-height: 231px;
+    }
+
+    .big{
         font-size: 18px;
     }
 
@@ -234,6 +238,30 @@ main{
             gap: 1rem;
             justify-content: center;
         }
+
+        .track{
+            padding: 1rem;
+            position: relative;
+        }
+
+        .track::before{
+            content: '';
+            height: 6px;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .track::after{
+            content: '';
+            height: 6px;
+            width: 70%;
+            display: block;
+            background-color: white;
+            border-radius: 10px;
+        }
     }
 
     .volume{
@@ -325,7 +353,7 @@ p{
 
             .lg-big{
                 display: block;
-                width: 200px;
+                width: 100px;
             }
         }
 
