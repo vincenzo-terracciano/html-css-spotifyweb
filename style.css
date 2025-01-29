@@ -8,28 +8,31 @@
     --spoti-icon: #666666;
     --spoti-primary: #141922;
     --spoty-secondary: #080b12;
+    --spoty-final: #282828;
 }
 
 .top{
     background-color: black;
     display: flex;
+    height: calc(100vh - 120px);
+    overflow: auto;
 }
 
 .sidebar{
-    width: 10%;
-    max-width: 220px;
-    height: 1000px;
+    width: 50px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    
 
     li{
         padding-top: 1rem;
     }
 
     .logo{
+
         img{
             width: 20px;
         }
@@ -40,7 +43,6 @@
     }
 
     nav{
-    width: 100%;
 
         img{
             width: 20px;
@@ -84,8 +86,7 @@
 }
 
 main{
-    width: 90%;
-    max-width: 1140px;
+    width: calc(100% - 50px);
     background-color: var(--spoti-primary);
 
     .upgrade{
@@ -133,6 +134,80 @@ main{
             border-radius: 50%;
         }
     }
+}
+
+.bottom{
+    height: 120px;
+    background-color: var(--spoty-final);
+    display: flex;
+
+    .song{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+
+        a{
+            &:hover{
+                color: white;
+            }
+        }
+        
+
+        .detail{
+            display: flex;
+            padding: 2.5rem 0.5rem;
+    
+            img{
+                width: 40px;
+            }
+    
+            .card-right{
+                padding-left: 0.75rem;
+    
+                h5{
+                    color: white;
+                    font-size: 16px;
+                }
+    
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .icon{
+            padding-left: 0.5rem;
+
+            i{
+                color: var(--spoti-icon);
+            }
+        }
+    }
+
+    .play{
+        flex-grow: 2;
+        align-self: center;
+
+        ul{
+            display: flex;  
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+
+    .volume{
+        flex-grow: 1;
+        align-self: center;
+
+        ul{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+
+
+    
 }
 
 
@@ -198,7 +273,7 @@ p{
 @media screen and (min-width: 639px) {
 
     .sidebar{
-        width: 30%;
+        width: 220px;
         align-items: start;
 
         .logo{
@@ -228,6 +303,10 @@ p{
 }
 
 @media screen and (min-width: 878px) {
+
+    .main{
+        width: calc(100% - 220px);
+    }
 
     .col-3{
         width: calc(100% / 12 * 3);
