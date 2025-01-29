@@ -14,17 +14,19 @@
 .top{
     display: flex;
     height: calc(100vh - 120px);
-    overflow: auto;
 }
 
 .sidebar{
     width: 50px;
+    height: 100%;
     padding: 1rem;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    font-size: 15px;
+    overflow-y: auto;
     
 
     li{
@@ -89,6 +91,7 @@
 main{
     width: calc(100% - 50px);
     background-color: var(--spoti-primary);
+    overflow-y: auto;
 
     .upgrade{
         height: 90px;
