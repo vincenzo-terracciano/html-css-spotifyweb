@@ -13,7 +13,7 @@
 
 .top{
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
 }
 
 .sidebar{
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
-    overflow-y: auto;
+    overflow-y: hidden;
     
 
     li{
@@ -142,7 +142,7 @@ main{
 }
 
 .bottom{
-    height: 120px;
+    height: 80px;
     background-color: var(--spoty-final);
     display: flex;
 
