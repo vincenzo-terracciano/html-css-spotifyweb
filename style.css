@@ -34,7 +34,7 @@ body{
     
 
     li{
-        padding-top: 1rem;
+        padding: 0.5rem 0;
     }
 
     .logo{
@@ -77,6 +77,11 @@ body{
             color: white;
             padding: 2rem 0 0.5rem 0;
         }
+
+        strong{
+            padding-left: 0.5rem;
+            color: white;
+        }
     }
 
     .playlist{
@@ -107,6 +112,7 @@ main{
         padding: 2rem 0.5rem;
         background-color: var(--spoty-secondary);
 
+
         a{
             border: 1px solid var(--spoti-icon);
             padding: 1rem 2rem;
@@ -122,6 +128,20 @@ main{
     .menu{
         padding: 1rem;
         background-color: var(--spoti-primary);
+
+        .underline{
+            position: relative;
+        }
+
+        .underline::after{
+            content: '';
+            width: 35px;
+            height: 2px;
+            background-color: yellow;
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+        }
         
         .genres{
 
