@@ -11,6 +11,10 @@
     --spoty-final: #282828;
 }
 
+body{
+    overflow: hidden;
+}
+
 .top{
     display: flex;
     height: calc(100vh - 80px);
@@ -141,6 +145,38 @@ main{
     }
 }
 
+.card .card-top{
+    position: relative;
+    
+
+    .start{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        
+
+        i{
+            font-size: 70px;
+        }
+    }
+}
+
+.card-top:hover img{
+
+    opacity: 0.5;
+
+}
+
+.card-top:hover .start{
+    display: block;
+}
+
+
+
+
+
 .bottom{
     height: 80px;
     background-color: var(--spoty-final);
@@ -221,6 +257,7 @@ main{
 
 img{
     max-width: 100%;
+    opacity: 1;
 }
 
 .text-hidden{
