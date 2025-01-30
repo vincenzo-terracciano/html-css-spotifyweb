@@ -7,7 +7,7 @@
 :root{
     --spoti-icon: #666666;
     --spoti-primary: #141922;
-    --spoty-secondary: #080b12;
+    --spoty-secondary: #080b129b;
     --spoty-final: #282828;
 }
 
@@ -112,6 +112,10 @@ main{
         text-align: end;
         padding: 2rem 0.5rem;
         background-color: var(--spoty-secondary);
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 10;
 
 
         a{
