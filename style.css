@@ -89,7 +89,8 @@ body{
     }
 
     .scroll{
-        min-height: 231px;
+        height: calc(100vh - 80px - 350px);
+        overflow-y: auto;
     }
 
     .big{
@@ -255,32 +256,33 @@ main{
 
         ul{
             display: flex;  
-            gap: 1rem;
+            gap: 1.5rem;
             justify-content: center;
         }
+    }
 
-        .track{
-            padding: 1rem;
+    .track-time{
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+
+        .white-line{
+            height: 1px;
+            width: 50%;
+            border: 2px solid white;
+        }
+
+        .grey-line{
+            height: 1px;
+            width: 100%;
+            border: 2px solid grey;
             position: relative;
         }
 
-        .track::before{
-            content: '';
-            height: 6px;
-            width: 90%;
-            background-color: white;
-            border-radius: 10px;
-            opacity: 0.3;
-            position: absolute;
-        }
-
-        .track::after{
-            content: '';
-            height: 6px;
-            width: 70%;
-            display: block;
-            background-color: white;
-            border-radius: 10px;
+        strong{
+            color: white;
+            font-size: 12px;
+            padding: 0 1rem;
         }
     }
 
