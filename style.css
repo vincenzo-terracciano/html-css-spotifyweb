@@ -308,10 +308,22 @@ main{
                 width: 50%;
                 border: 2px solid white;
                 border-radius: 1rem;
+                position: relative;
 
                 &:hover{
                     border: 2px solid rgb(255, 255, 106);
                 }
+            }
+
+            .circle{
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 2%;
+                right: 57%;
+
             }
     
             .grey-line{
