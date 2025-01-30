@@ -31,6 +31,14 @@ body{
     justify-content: space-between;
     font-size: 15px;
     overflow-y: hidden;
+
+    img{
+        opacity: 0.5;
+
+        &:not(:first-child){
+            opacity: 1;
+        }
+    }
     
 
     li{
@@ -39,13 +47,16 @@ body{
 
     .logo{
 
-
         img{
             width: 20px;
         }
 
         .lg-big{
             display: none;
+        }
+
+        ul{
+            padding-top: 0.2rem;
         }
     }
 
@@ -81,6 +92,12 @@ body{
         strong{
             padding-left: 0.5rem;
             color: white;
+        }
+
+        &:hover{
+            img{
+                opacity: 1;
+            }
         }
     }
 
@@ -120,12 +137,13 @@ main{
 
         a{
             border: 1px solid var(--spoti-icon);
-            padding: 1rem 2rem;
+            padding: 0.7rem 1.7rem;
             border-radius: 6rem;
             font-size: 12px;
 
             &:hover{
                 border: 1px solid white;
+                padding: 1rem 2rem;
             }
         }
     }
@@ -169,6 +187,10 @@ main{
 
     .most-listened{
         img{
+            border-radius: 50%;
+        }
+
+        .start{
             border-radius: 50%;
         }
     }
@@ -242,6 +264,17 @@ main{
                 p{
                     font-size: 12px;
                 }
+
+                span{
+                    font-size: 12px;
+                    display: block;
+                    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                    
+                
             }
         }
 
@@ -275,6 +308,10 @@ main{
                 width: 50%;
                 border: 2px solid white;
                 border-radius: 1rem;
+
+                &:hover{
+                    border: 2px solid rgb(255, 255, 106);
+                }
             }
     
             .grey-line{
@@ -290,6 +327,8 @@ main{
                 font-size: 12px;
                 padding: 0 1rem;
             }
+
+            
         }
     }
 
@@ -318,6 +357,10 @@ main{
                 width: 100px;
                 border: 2px solid white;
                 border-radius: 1rem;
+
+                &:hover{
+                    border: 2px solid rgb(255, 255, 106);
+                }
             }
 
             .grey-line{
@@ -426,7 +469,10 @@ p{
     .text-hidden{
         display: inline;
     }
-    
+
+    .bottom .song .detail .card-right span{
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 878px) {
