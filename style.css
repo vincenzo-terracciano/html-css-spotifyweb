@@ -174,18 +174,18 @@ main{
     }
 }
 
-.card .card-top{
+.card-top{
     position: relative;
-
-    
     
 
     .start{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         display: none;
+        background-color: rgba(0, 0, 0, 0.702);
         
 
         i{
@@ -194,14 +194,12 @@ main{
     }
 }
 
-.card-top:hover{
-
-    background-color: rgba(0, 0, 0, 0.705);
-
-}
 
 .card-top:hover .start{
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -249,10 +247,6 @@ main{
 
         .icon{
             padding-left: 0.5rem;
-
-            i{
-                color: var(--spoti-icon);
-            }
         }
     }
 
@@ -264,44 +258,79 @@ main{
             display: flex;  
             gap: 1.5rem;
             justify-content: center;
+            align-items: center;
+        }
+
+        .fa-circle-play{
+            font-size: 40px;
+        }
+
+        .track-time{
+            display: flex;
+            align-items: center;
+            padding-top: 0.5rem;
+    
+            .white-line{
+                height: 1px;
+                width: 50%;
+                border: 2px solid white;
+                border-radius: 1rem;
+            }
+    
+            .grey-line{
+                height: 1px;
+                width: 100%;
+                border: 2px solid grey;
+                position: relative;
+                border-radius: 1rem;
+            }
+    
+            strong{
+                color: white;
+                font-size: 12px;
+                padding: 0 1rem;
+            }
         }
     }
 
-    .track-time{
-        display: flex;
-        align-items: center;
-        padding-top: 1rem;
-
-        .white-line{
-            height: 1px;
-            width: 50%;
-            border: 2px solid white;
-        }
-
-        .grey-line{
-            height: 1px;
-            width: 100%;
-            border: 2px solid grey;
-            position: relative;
-        }
-
-        strong{
-            color: white;
-            font-size: 12px;
-            padding: 0 1rem;
-        }
-    }
+    
 
     .volume{
         flex-grow: 1;
         align-self: center;
+        justify-content: end;
+        padding: 0 1rem;
+        display: flex;
 
         ul{
             display: flex;
             gap: 1rem;
             justify-content: center;
         }
+
+        .volume-setting{
+            padding-left: 0.5rem;
+            display: flex;
+            align-items: center;
+            
+            .white-line{
+                height: 1px;
+                width: 100px;
+                border: 2px solid white;
+                border-radius: 1rem;
+            }
+
+            .grey-line{
+                height: 1px;
+                width: 100%;
+                border: 2px solid grey;
+                position: relative;
+                border-radius: 1rem;
+            }
+
+        }
     }
+
 
 
     
@@ -408,6 +437,14 @@ p{
 
     .col-3{
         width: calc(100% / 12 * 3);
+    }
+
+    .bottom .song .icon ul{
+        display: flex;
+        
+        i{
+            padding-right: 0.5rem;
+        }
     }
     
 }
