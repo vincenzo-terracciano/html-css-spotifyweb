@@ -301,37 +301,46 @@ main{
         .track-time{
             display: flex;
             align-items: center;
+            justify-content: center;
             padding-top: 0.5rem;
+            
     
             .white-line{
                 height: 1px;
                 width: 50%;
                 border: 2px solid white;
                 border-radius: 1rem;
-                position: relative;
+                display: block;
+                position: absolute;
+                
 
                 &:hover{
                     border: 2px solid rgb(255, 255, 106);
                 }
             }
 
+            .track-line{
+                position: relative;
+                width: 80%;
+            }
+
             .circle{
                 width: 10px;
                 height: 10px;
-                background-color: white;
                 border-radius: 50%;
+                background-color: white;
                 position: absolute;
-                bottom: 2%;
-                right: 57%;
-
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
     
             .grey-line{
                 height: 1px;
                 width: 100%;
                 border: 2px solid grey;
-                position: relative;
                 border-radius: 1rem;
+                display: block;
             }
     
             strong{
@@ -348,7 +357,7 @@ main{
 
     .volume{
         flex-grow: 1;
-        align-self: center;
+        align-items: center;
         justify-content: end;
         padding: 0 1rem;
         display: flex;
